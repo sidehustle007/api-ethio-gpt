@@ -12,15 +12,15 @@ openai.api_key = main_api_key['api_key']
 
 
 origins = [
-    '*'
+    'https://ethiogpt.vercel.app'
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins='https://ethiogpt.vercel.app',
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=['*']
+    allow_headers=['*'],
 )
 
 
